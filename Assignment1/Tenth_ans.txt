@@ -1,0 +1,11 @@
+The JVM is abbreviated as Java Virtual Machine. And it is repsonbile to generate the java byte code.The main components of the JVM are:
+
+ClassLoader: Loads Java class files into memory through three phases: loading, linking (verification, preparation, resolution), and initialization.
+
+Runtime Data Area: Divided into the method area (stores class-level data), heap (stores objects dynamically allocated), Java stacks (per-thread stack for method invocations), PC registers (program counter registers), and native method stacks.
+
+Execution Engine: Executes Java bytecode, using techniques like interpretation and Just-In-Time (JIT) compilation for performance optimization.
+
+Native Method Interface (JNI): Enables interaction between Java programs and native code written in other languages like C or C++.
+
+Java Native Library: Provides platform-specific JVM implementation and interfaces with the underlying operating system.

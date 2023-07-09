@@ -1,0 +1,28 @@
+In Java, variables are used to store data values that can be manipulated and accessed throughout a program. Java supports different types of variables, each with its own characteristics and usage. Here are the main types of variables in Java:
+
+Primitive Variables: These variables hold simple, fundamental data types. Java provides eight primitive data types:
+boolean: Represents a true/false value.
+byte: Represents a small integer value.
+short: Represents a short integer value.
+int: Represents an integer value.
+long: Represents a long integer value.
+float: Represents a single-precision floating-point value.
+double: Represents a double-precision floating-point value.
+char: Represents a single character.
+
+Object Variables: These variables hold references to objects or instances of classes. Object variables are declared using a class name and can store the memory address of an object.
+Ex: String name = "Aashutosh"; Here, name is an object variable of type String.
+
+Array Variables: Arrays are objects in Java, and array variables store references to arrays. They can hold multiple values of the same type.
+Ex: int[] numbers = {1, 2, 3, 4, 5}; Here, numbers is an array variable of type int[].
+
+Static Variables: These variables are associated with a class rather than an instance of the class. They are shared among all instances of the class and are accessed using the class name.
+Static variables are declared using the static keyword and can be accessed without creating an object of the class.
+Ex: static int count = 0; Here, count is a static variable.
+
+Instance Variables: These variables are declared inside a class but outside any method or constructor. Each instance of a class has its own copy of instance variables.
+Instance variables are declared without the static keyword and are accessed using object references.
+Ex: public int age; Here, age is an instance variable.
+
+Local Variables: These variables are declared within a method, constructor, or block and are accessible only within their scope,local variables must be initialized before they are used.
+For example: int x = 10; Here, x is a local variable.

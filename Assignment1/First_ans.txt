@@ -1,0 +1,16 @@
+Interpreter:
+
+Translates and executes the source code line by line during runtime.
+Does not generate an independent executable file.
+Slower execution speed compared to compilers.
+Detects errors line by line during execution.
+More portable as the interpreter itself handles the execution.
+Lower memory usage as it only stores the intermediate representation and the currently executed line.
+Compiler:
+
+Translates the entire source code into machine code before execution.
+Generates an independent executable file.
+Faster execution speed compared to interpreters.
+Detects errors during the compilation process.
+Platform-specific, requiring recompilation for different platforms.
+Often requires more memory due to generating machine code for the entire program

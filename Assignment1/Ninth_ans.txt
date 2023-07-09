@@ -1,0 +1,11 @@
+Identifiers in Java are names used to identify variables, methods, classes, packages, and other program elements. They follow certain rules and conventions:
+
+Start with a letter, underscore, or dollar sign.
+Can contain letters, digits, underscores, and dollar signs.
+Case-sensitive (uppercase and lowercase letters are distinct).
+Cannot be Java keywords or reserved words.
+Use meaningful and descriptive names.
+Follow conventions: camelCase for variables and methods, PascalCase for classes.
+Package names are lowercase.
+Class names start with an uppercase letter.
+Method and variable names start with a lowercase letter.

@@ -1,0 +1,9 @@
+A compiler in Java is a software tool that translates human-readable Java source code into machine-readable bytecode.
+Java source code is written by developers using a text editor or IDE and saved with a .java extension.
+The Java compiler, bundled with the Java Development Kit (JDK), verifies the correctness of the source code by checking for syntax errors, type compatibility, and other language-specific rules.
+If the compiler successfully verifies the source code, it generates platform-independent bytecode.
+The bytecode is saved in a file with a .class extension.
+The Java Virtual Machine (JVM) is responsible for executing the bytecode.
+The JVM interprets the bytecode or, in some cases, just-in-time (JIT) compiles it into machine code for efficient execution.
+The JVM enables Java programs to be executed on different platforms without requiring platform-specific changes.
+The JVM executes the bytecode instructions one by one, performing the operations specified in the source code.

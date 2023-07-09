@@ -1,0 +1,23 @@
+In Java, access specifiers are keywords used to define the accessibility or visibility of classes, methods, variables, and constructors within a program. There are four access specifiers in Java:
+
+Public:
+
+The public access specifier allows unrestricted access from anywhere within the program and from other programs.
+Classes, methods, variables, and constructors declared as public can be accessed by any other class or code.
+
+Private:
+
+The private access specifier restricts access to within the same class.
+Methods, variables, and constructors declared as private can only be accessed within the class they are declared in.
+Private members are not visible to other classes or code.
+
+Protected:
+
+The protected access specifier allows access within the same package and subclasses (even if they are in different packages).
+Methods, variables, and constructors declared as protected can be accessed by other classes within the same package or by subclasses, even if they are in different packages.
+
+Default (Package-private):
+
+The default or package-private access specifier is used when no access specifier is explicitly specified.
+It allows access within the same package.
+Methods, variables, and constructors without an access specifier are considered default and are accessible only within the same package.

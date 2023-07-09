@@ -1,0 +1,14 @@
+JIT stands for Just-In-Time. A JIT compiler is a component of the Java Virtual Machine (JVM) that dynamically compiles bytecode into machine code at runtime, allowing for improved performance during program execution. 
+When a Java program is executed, the JVM initially interprets the bytecode line by line.
+However, when the JVM identifies certain code sections that are frequently executed or deemed performance-critical, it triggers the JIT compiler.
+The JIT compiler dynamically compiles the identified bytecode sections into machine code, specific to the underlying hardware and operating system.
+This compilation happens during runtime, just before the execution of the corresponding code.
+The JIT compiler performs various optimization techniques on the compiled code to improve execution speed.
+These optimizations include removing redundant code, inlining methods, eliminating unnecessary checks, and optimizing memory access.
+Once the JIT compiler compiles a section of bytecode into machine code, it caches the compiled code for future use.
+This caching mechanism avoids recompiling the same code section every time it is encountered during program execution.
+JIT compilers often employ adaptive techniques to monitor and analyze program behavior during runtime.
+Based on the observed runtime characteristics, the JIT compiler may recompile certain code sections with different optimization strategies to further enhance performance.
+JIT compilation introduces a slight overhead during the initial execution as bytecode needs to be interpreted.
+However, as the JIT compiler optimizes and compiles frequently executed code, subsequent executions of those code sections are much faster.
+The trade-off lies in the increased startup time in exchange for improved overall performance during program execution.

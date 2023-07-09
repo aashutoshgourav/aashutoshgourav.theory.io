@@ -1,0 +1,26 @@
+The JVM (Java Virtual Machine) allocates memory for various purposes during the execution of a Java program. There are several memory areas or regions managed by the JVM. The main memory areas allocated by the JVM are as follows:
+
+Heap Memory:
+
+The Heap memory is the runtime data area where objects are allocated.
+It is shared among all threads and dynamically grows and shrinks based on the requirements of the program.
+The objects in the heap are managed by the garbage collector, which automatically frees memory occupied by objects that are no longer referenced.
+Stack Memory:
+
+Each thread in a Java program has its own stack memory.
+The stack memory is used to store local variables, method invocations, and method call stack.
+It operates in a last-in-first-out (LIFO) manner and is automatically managed by the JVM.
+Method Area (or PermGen):
+
+The Method Area stores class structures, method bytecode, constant pool, and static variables.
+It is shared among all threads and is a part of the JVM's memory reserved for the execution of the program.
+Starting from Java 8, the Permanent Generation (PermGen) was replaced by the Metaspace, which is a native memory area outside of the JVM heap.
+Program Counter (PC) Register:
+
+Each thread in the JVM has its own Program Counter (PC) Register.
+The PC Register stores the address of the currently executing instruction of the thread.
+It is updated as the thread executes each instruction and helps in maintaining the program flow.
+Native Method Stacks:
+
+Native method stacks are used to execute native methods or methods written in other languages.
+They are separate from the JVM's Java stack and are specific to native code execution

@@ -1,0 +1,24 @@
+Java provides several built-in data types that programmers can use to declare variables and manipulate data. The main data types in Java:
+
+Primitive Data Types:
+
+boolean: Represents a boolean value (true or false).
+byte: Represents a signed 8-bit integer value.
+short: Represents a signed 16-bit integer value.
+int: Represents a signed 32-bit integer value.
+long: Represents a signed 64-bit integer value.
+float: Represents a single-precision 32-bit floating-point value.
+double: Represents a double-precision 64-bit floating-point value.
+char: Represents a single Unicode character.
+Reference Data Types:
+
+String: Represents a sequence of characters.
+Arrays: Represents a collection of elements of the same type.
+Classes: Represents user-defined types.
+Derived Data Types:
+
+Enums: Represents a set of predefined values.
+Interfaces: Represents a contract for classes to implement.
+Special Types:
+
+void: Represents the absence of a type. Used for methods that do not return a value.
