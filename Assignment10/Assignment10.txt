@@ -1,0 +1,55 @@
+Q1. Spring MVC framework:
+Spring MVC is a module of the Spring Framework that provides a robust and flexible Model-View-Controller (MVC) architecture for building web applications. It enables developers to create clean, loosely coupled, and scalable web applications by following the MVC design pattern. Spring MVC is widely used for developing web-based applications and RESTful web services.
+
+Q2. Benefits of Spring MVC framework over other MVC frameworks:
+Integration with other Spring modules and technologies, promoting seamless development.
+Comprehensive support for handling web requests and responses.
+Easy configuration and extensibility through annotations and XML-based configuration.
+Built-in support for handling form submissions, data binding, and validation.
+Powerful and flexible view resolution and template rendering.
+Simplified exception handling and error reporting.
+Integration with popular front-end frameworks like Angular, React, etc.
+
+Q3. DispatcherServlet in Spring MVC:
+DispatcherServlet is the core front controller in the Spring MVC framework. It receives all incoming HTTP requests and then dispatches them to the appropriate controller for processing. It acts as the entry point of the Spring MVC application and manages the request processing flow.
+
+Spring MVC Architecture:
+
+When an HTTP request is made, DispatcherServlet receives it.
+The DispatcherServlet consults the HandlerMapping to find the appropriate controller for the request.
+The selected controller processes the request and returns a ModelAndView object that contains the view name and model data.
+The DispatcherServlet then consults the ViewResolver to resolve the view name to the actual view (HTML, JSP, etc.).
+The view is rendered, and the response is sent back to the client.
+
+Q4. View Resolver pattern in Spring MVC:
+View Resolver is a design pattern in Spring MVC that abstracts the process of resolving view names to the actual view templates or pages. It helps decouple the controller from the view rendering logic, allowing flexibility in view technologies and easy view switching.
+
+The significance of View Resolver in Spring MVC is that it simplifies the configuration by allowing developers to specify view names without specifying the actual view technology or template locations. The View Resolver then takes care of resolving these view names to the actual views based on the configuration.
+
+Q5. Differences between @RequestParam and @PathVariable annotations:
+@RequestParam: It is used to extract query parameters or form data from the request URL. It is usually used with the GET method to pass data as key-value pairs in the URL. Example: @RequestParam("id") int userId.
+
+@PathVariable: It is used to extract data from the URI path itself. It is used with the GET method and allows embedding data directly in the URL path. Example: @PathVariable("id") int userId.
+
+Q6. Model in Spring MVC:
+In Spring MVC, the Model represents the data that is exchanged between the controller and the view. It acts as a holder for model attributes, which are objects used to pass data from the controller to the view for rendering. The model attributes can be simple objects or more complex objects like lists or maps.
+
+Q7. Role of @ModelAttribute annotation:
+The @ModelAttribute annotation in Spring MVC is used to bind a method parameter or method return value to a named model attribute. It is typically used in controller methods to prepopulate the model with data before rendering the view. When used on a method parameter, it indicates that the method parameter should be treated as a model attribute. When used on a method, it indicates that the method return value should be added to the model with the specified name.
+
+Q8. Significance of @Repository annotation:
+The @Repository annotation is used in Spring to indicate that a class is a repository or a data access object (DAO). It is a specialization of the @Component annotation and is used to identify classes that access the database or external data sources. The @Repository annotation allows the Spring container to automatically detect and manage these classes as Spring beans.
+
+Q9. REST and RESTful web services:
+REST stands for Representational State Transfer. It is an architectural style that uses standard HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources. RESTful web services are web services that adhere to the principles of REST.
+Q10. Differences between RESTful web services and SOAP web services:
+
+RESTful web services use standard HTTP methods (GET, POST, PUT, DELETE), while SOAP web services use XML-based messaging protocols (SOAP, WSDL) for communication.
+RESTful web services are lightweight and have a simpler and more flexible architecture compared to SOAP web services.
+RESTful web services are stateless, whereas SOAP web services can be stateful.
+RESTful web services use simple URIs for resource identification, while SOAP web services use a more complex XML-based messaging format.
+RESTful web services are preferred for mobile and web applications due to their lightweight nature, while SOAP web services are commonly used in enterprise-level applications.
+
+
+
+
