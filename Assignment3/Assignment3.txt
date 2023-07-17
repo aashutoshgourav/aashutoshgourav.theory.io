@@ -1,0 +1,114 @@
+Q1. Banking System program using OOPs concepts:
+class BankAccount {
+    private String accountHolderName;
+    private double balance;
+
+    public BankAccount(String accountHolderName, double balance) {
+        this.accountHolderName = accountHolderName;
+        this.balance = balance;
+    }
+
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
+BankAccount account = new BankAccount("John Doe", 1000.0);
+String accountHolderName = account.getAccountHolderName();
+double balance = account.getBalance();
+
+Q2. Method overriding example:
+class ParentClass {
+    public void display() {
+        System.out.println("Parent class display method");
+    }
+}
+
+class ChildClass extends ParentClass {
+    
+    public void display() {
+        System.out.println("Child class display method");
+    }
+}
+
+Q3. Runtime polymorphism example:
+class Animal {
+    public void makeSound() {
+        System.out.println("Animal is making a sound");
+    }
+}
+
+class Dog extends Animal {
+    
+    public void makeSound() {
+        System.out.println("Dog is barking");
+    }
+}
+
+class Cat extends Animal {
+    
+    public void makeSound() {
+        System.out.println("Cat is meowing");
+    }
+}
+
+Animal animal = new Dog();
+animal.makeSound();
+
+Q4. Compile-time polymorphism example:
+class Calculation {
+    public int add(int num1, int num2) {
+        return num1 + num2;
+    }
+
+    public int add(int num1, int num2, int num3) {
+        return num1 + num2 + num3;
+    }
+}
+
+Calculation calc = new Calculation();
+int result1 = calc.add(2, 3);
+int result2 = calc.add(2, 3, 4);
+
+Q5. Achieving loose coupling in Java using OOPs:
+In Java, loose coupling can be achieved by implementing interfaces and using dependency injection. By defining interfaces, classes can interact through those interfaces, reducing direct dependencies. Dependency injection frameworks, like Spring, can be used to manage and inject dependencies, allowing for easy swapping of implementations and reducing tight coupling.
+
+Q6. The benefit of encapsulation in Java:
+Encapsulation in Java provides data hiding and abstraction. By encapsulating data within classes and providing public methods for accessing and modifying that data, we can control its visibility and ensure proper data manipulation. Encapsulation also helps in maintaining code integrity, as the internal details of a class can be hidden, and any changes to the implementation can be done within the class without affecting the code that uses the class.
+
+Q7. No, Java is not a 100% Object-Oriented Programming language.
+Java supports object-oriented programming principles such as encapsulation, inheritance, and polymorphism. However, it also incorporates non-object-oriented features, such as primitive data types and static methods. Additionally, Java has a separate namespace for functions (methods) outside of classes. So while Java is primarily object-oriented, it is not strictly limited to objects and can utilize procedural programming concepts as well.
+
+Q8. Advantages of abstraction in Java:
+Abstraction helps in simplifying complex systems by breaking them down into manageable and understandable parts.
+It provides a high level of modularity and reusability, as the internal implementation details are hidden and only the essential features are exposed.
+Abstraction enhances code maintainability, as changes made to the implementation of an abstracted class do not affect the code that uses it, as long as the interface remains unchanged.
+It promotes code flexibility, as different implementations can be used interchangeably as long as they adhere to the defined abstraction.
+
+Q9. Abstraction in Java explained with an example:
+interface Vehicle {
+    void start();
+    void stop();
+}
+
+class Car implements Vehicle {
+    
+    public void start() {
+        System.out.println("Car started");
+    }
+
+    
+    public void stop() {
+        System.out.println("Car stopped");
+    }
+}
+
+Vehicle vehicle = new Car();
+vehicle.start();
+vehicle.stop();
+
+Q10. The final class in Java is a class that cannot be extended or subclassed. It is used to prevent further inheritance and ensure that the class remains unchanged. Final classes are often employed for security reasons or when the class's design is considered complete and should not be modified or extended.
