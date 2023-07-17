@@ -1,0 +1,56 @@
+Q1. Use of JDBC in Java:
+JDBC (Java Database Connectivity) is a Java API that provides a standard way for Java applications to interact with relational databases. It enables Java programs to perform database operations such as connecting to databases, executing SQL queries, updating and retrieving data, and managing database transactions.
+
+Q2. Steps involved in JDBC:
+Load the JDBC driver using Class.forName().
+Establish a database connection using DriverManager.getConnection().
+Create a Statement or PreparedStatement to execute SQL queries.
+Execute the SQL queries and process the results.
+Close the Statement, PreparedStatement, and Connection to release resources.
+
+Q3. Types of statement in JDBC in Java:
+Statement: Used for executing static SQL queries without parameters.
+PreparedStatement: Used for executing dynamic SQL queries with parameters. It provides better performance and security by precompiling the SQL statement.
+CallableStatement: Used to call stored procedures in the database.
+
+Q4. Servlet in Java:
+A servlet in Java is a server-side component that extends the functionality of a web server and processes client requests. It is a Java class that dynamically generates content and sends it back to the client as an HTTP response. Servlets are used to handle requests, perform business logic, and generate dynamic web pages.
+
+Q5. Life Cycle of a servlet:
+Initialization: The servlet is loaded and initialized by the container when the application is started or when the first request for the servlet is received.
+Service: The service() method is called by the container for each client request. It processes the request and generates the response.
+Destruction: The servlet is destroyed by the container when the application is stopped or undeployed.
+
+Q6. Difference between RequestDispatcher.forward() and HttpServletResponse.sendRedirect() methods:
+RequestDispatcher.forward(): It is used to forward the request and response objects from one servlet to another resource (servlet, JSP, or HTML) on the server. The client is unaware of the forwarding, and the URL in the browser remains the same.
+
+HttpServletResponse.sendRedirect(): It is used to redirect the client to a different URL. The server sends an HTTP redirect status code (302) to the client, and the client's browser sends a new request to the new URL. The URL in the browser changes to the new URL.
+
+Q7. Purpose of the doGet() and doPost() methods in a servlet:
+doGet(): It handles HTTP GET requests sent by clients. It is used when the servlet is configured to handle only GET requests.
+
+doPost(): It handles HTTP POST requests sent by clients. It is used when the servlet is configured to handle only POST requests.
+
+Q8. Explanation of the JSP Model-View-Controller (MVC) architecture:
+The JSP Model-View-Controller (MVC) architecture is a design pattern used to structure web applications. In this pattern:
+
+Model: Represents the application's data and business logic.
+View: Represents the presentation layer, typically the user interface (HTML, JSP) that displays data to the user.
+Controller: Handles user input, processes requests, and updates the model and view accordingly.
+The MVC architecture separates concerns, making the application more organized and maintainable.
+
+Q9. Advantages of Servlets:
+Platform independence: Servlets are written in Java, making them platform-independent and can run on any operating system.
+Performance: Servlets provide high performance due to their ability to load in memory and handle multiple requests concurrently.
+Reusability: Servlets can be reused across multiple applications and can be combined with other Java technologies.
+Integration: Servlets can easily integrate with other Java EE technologies like JSP, EJBs, and JDBC to build enterprise-level applications.
+
+Q10. Limitations of JSP:
+Slower development process: JSP requires a build-deploy-test cycle, which may slow down development compared to front-end technologies like HTML/CSS/JS.
+Limited separation of concerns: In JSP, presentation logic and business logic can sometimes get mixed, leading to less maintainable code.
+Steeper learning curve: JSP requires knowledge of Java, Servlets, and tag libraries, which may be challenging for front-end developers with no Java background.
+Performance overhead: The initial compilation of JSP into servlets may cause a slight performance overhead during the first request.
+
+
+
+
