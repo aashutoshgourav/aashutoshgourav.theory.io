@@ -1,0 +1,24 @@
+Q1. Conditional Operators in Java are used to perform comparisons and make decisions based on conditions. The == operator checks if two operands are equal. The != operator checks if two operands are not equal. The > and < operators compare operands for greater than and less than conditions respectively. The >= and <= operators check for greater than or equal to and less than or equal to conditions respectively.
+
+Q2. Operators in Java can be classified based on the number of operands they operate on. Unary operators work with a single operand, such as the ++ and -- operators used for incrementing or decrementing values. Binary operators operate on two operands, including arithmetic operators like +, -, *, and /. Ternary operator ? : is the only operator that takes three operands.
+
+Q3. The switch case in Java is a control structure used for multi-way branching. It provides an alternative to using multiple if-else statements. The switch statement evaluates an expression and matches it against different cases. When a match is found, the corresponding block of code is executed. It simplifies the code and improves readability when there are multiple possible values to compare against.
+
+Q4. Conditional statements in Java, such as if, if-else, and switch case, are used to control the flow of a program based on certain conditions. They allow for decision-making and executing different code blocks depending on the evaluation of conditions. This helps in making programs more dynamic and responsive, enabling different actions to be performed based on different scenarios or inputs.
+
+Q5. The syntax of the if-else statement in Java is as follows: The if statement is used to check a condition, and if it evaluates to true, the code block inside the if statement is executed. If the condition is false, the code block inside the else statement is executed. It provides a way to execute different code blocks based on the truthiness of a condition.
+
+Q6. To compare two strings in Java, the equals() method is commonly used. The equals() method compares the content of the strings rather than the references. For example, str1.equals(str2) checks if str1 is equal to str2. It returns true if the strings have the same characters in the same order, and false otherwise.
+
+Q7. In Java, a mutable string can be represented using the StringBuilder class. Unlike the immutable String class, which cannot be modified once created, a StringBuilder object can be changed or appended without creating a new instance. This is useful when there is a need to perform multiple modifications on a string efficiently. For example, you can use StringBuilder to concatenate or modify strings dynamically by calling methods like append(), insert(), or delete() on the StringBuilder object.
+
+Q8. Here's a program in Java to sort a string alphabetically: First, convert the string to a character array using the toCharArray() method. Then, use the Arrays.sort() method to sort the array in ascending order. Finally, create a new string using the sorted character array by using the String class constructor. The resulting string will be sorted alphabetically.
+
+Q9. Here's a program in Java to check if the letter 'e' is present in the word 'Umbrella': Use the contains() method of the String class to check if the given word contains the specified character or substring. In this case, we can check if the word "Umbrella" contains the letter 'e'. If the contains() method returns true, it means that the letter 'e' is present in the word. Otherwise, if it returns false, it means the letter 'e' is not present.
+
+Q10. The string constant pool in Java is a special area of memory located in the heap. It is used to store string literals, which are constant strings defined in the source code. When a string literal is encountered, Java checks if it already exists in the pool. If it does, a reference to the existing string is returned. If not, a new string is created in the pool and its reference is returned. This optimization helps to save memory by reusing identical strings and allows for efficient string comparisons using the == operator.
+
+
+
+
+
